@@ -12,7 +12,7 @@ class UsersSeeder extends Seeder
     {
 
         $basePath = base_path();
-        $users_path = $basePath . '/../data/users.json';
+        $users_path = $basePath . './data/users.json';
 
         $data = file_get_contents($users_path);
         $users = json_decode($data);
